@@ -1,5 +1,5 @@
 # ProjetoSOs
-<h4>Repositório destinado à disciplina de Computação Paralela do curso de ciência da computação da universidade Mackenzie</h4>
+<h4>Repositório destinado à disciplina de Computação Paralela do curso de Ciência da Computação da Universidade Mackenzie</h4>
 
 <ins>Integrantes:</ins>
 - Giovana Ribeiro de Francisco	        RA:10297494
