@@ -12,7 +12,7 @@
 <h2>Índice</h2>
 
 <ul>
-<li><img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Lab01a.png" alt = "Gcc do código "Hello, world!"">.</li>
+<li><img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Imagem%20Hello%20World.png" alt = "Gcc do código "Hello, world!"">.</li>
 <li><img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Lab01a_push.png" alt = "Screenshot do processo de push do arquivo teste.c para este repositório github."></li>
 </ul>
 
