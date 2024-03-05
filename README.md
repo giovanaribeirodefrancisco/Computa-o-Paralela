@@ -8,4 +8,4 @@
 
 <h2>Organização</h2>
 
-A forma que este repositório foi organizado se baseia na existência de subdiretórios para os arquivos que correspondem aos diferentes laboratórios realizados, com o número do laboratório feito. O subdiretório /src é destinado à publicação de imagens utilizadas nos laboratórios.
+A forma que este repositório foi organizado se baseia na existência de diretórios para os arquivos que correspondem aos diferentes laboratórios realizados, com o número do laboratório feito. O subdiretório /src é destinado à publicação de imagens utilizadas nos laboratórios.
