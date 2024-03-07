@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 int matriz[3][3] = {{1,2,3},{1,2,3},{1,2,3}};
-int vetor[3] = {1,2,3};
+int vetor[3] = {1,3,3};
 int resultado[3];
 
 void* mult(void* num){
@@ -12,7 +12,7 @@ void* mult(void* num){
   resultado[nume]=0;
   for(i=0;i<3;i++)
     resultado[nume]+= matriz[nume][i]*vetor[i];
-  
+  return NULL;
 }
 
 int main(void) {
