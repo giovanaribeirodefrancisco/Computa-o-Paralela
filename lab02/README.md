@@ -10,6 +10,32 @@ O código foi compilado e executado no ambiente da AWS gerenciado pelo grupo.
 - Leila Akina Ino
 - Letícia Moraes Gutierrez de Oliveira
 
+<h2>Código</h2>
+
+Primeiro, incluímos todas as bibliotecas, colocamos a biblioteca pthread.h no nosso código pois ela tem as funcionalidades necessárias que precisávamos. Adicionamos também a biblioteca padrão em C de entrada e saída, stdio.h e a biblioteca padrão de funções em C, stdlib.h.
+
+Criamos e fizemos a declaração de três arrays globais:
+- matriz[3][3], uma matriz 3x3 cujo os valores são {{1,2,3},{1,2,3},{1,2,3}}.
+- vetor[3], um vetor de tamanho 3 cujo o valor é {1,3,3}.
+- resultado[3], um vetor no qual os resultados da multiplicação serão armazenados.
+  
+Depois criamos a função mult, que é executada por cada thread criada, ela recebe um argumento do tipo void* que é convertido para long (ele representa um número inteiro longo em C, armazenando assim números inteiros maiores do que o tipo  int), depois multiplica a linha correspondente da matriz pelo vetor e armazena o resultado no resultado[].
+
+Após isso criamos a função main, que declara as variáveis linhas e colunas para armazenar o tamanho da matriz, ela também aloca dinamicamente o espaço para um array de threads chamado thread_rope com tamanho igual ao número de linhas da matriz. Ela cria também um loop para criar threads, onde cada thread executa a função mult. Em seguida, outro loop espera pela conclusão de cada thread usando pthread_join.
+
+Após as threads serem feitas, é imprimido as respostas armazenadas em resultado. 
+
+Depois, utilizando a função free(), a memória alocada é liberada para thread_rope.
+
+E por último é retornado 0 para indicar que o programa foi executado com sucesso.
+
+<h2>Compilação</h2>
+
+
+
+
+
+
 <h2>Índice</h2>
 
 <ul>
