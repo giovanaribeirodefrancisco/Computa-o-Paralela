@@ -31,10 +31,16 @@ E por último é retornado 0 para indicar que o programa foi executado com suces
 
 <h2>Compilação</h2>
 
+Para realização da compilação dos códigos-fonte aqui disponibilizados, faz-se necessária a utilização do compilador GCC. A compilação dos arquivos .c deste repositório podem ser compilados da seguinte forma: `gcc -g -Wall -o nome_do_executável lab02.c -lpthread`. 
 
+No qual o -g é o debug;
+O -Wall são os warnings, ele ativa a maioria dos avisos durante a compilação;
+O -lpthread, é um suporte de thread POSIX, ele é usado para conectar a biblioteca pthread durante a compilação. 
+O -o especifica o nome do arquivo de saída após a compilação, permitindo assim, que você escolha o nome do arquivo executável que será gerado pelo compilador. 
+O `nome_do_executável` seria o arquivo executável gerado.
 
-
-
+No `lab02.c` você substituiria esse nome para o nome do seu arquivo. 
+Para executá-lo, basta digitar o seguinte comando: `./lab02.out`. Caso o arquivo gerado possua um nome diferente, basta substituir o arquivo `lab.out` pelo nome do arquivo gerado no comando anterior.
 
 <h2>Índice</h2>
 
@@ -42,5 +48,3 @@ E por último é retornado 0 para indicar que o programa foi executado com suces
 <li><img  >.</li>
 
 </ul>
-
-
