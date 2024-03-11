@@ -31,6 +31,6 @@ int main(void) {
     printf("%d ", resultado[k]);
   }
   printf("\n");
-  
+  free(thread_rope); 
   return 0;
 }
