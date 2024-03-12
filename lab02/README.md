@@ -10,6 +10,14 @@ O código foi compilado e executado no ambiente da AWS gerenciado pelo grupo.
 - Leila Akina Ino
 - Letícia Moraes Gutierrez de Oliveira
 
+<h2>Índice</h2>
+
+<ul>
+<li><code>lab02.c</code>: Código-fonte do exercício proposto. 
+<li><code>teste.out</code>: Saída relacionada às matrizes e vetores no código-fonte.
+</ul>
+
+
 <h2>Código</h2>
 
 Primeiro, incluímos todas as bibliotecas, colocamos a biblioteca pthread.h no nosso código pois ela tem as funcionalidades necessárias que precisávamos. Adicionamos também a biblioteca padrão em C de entrada e saída, stdio.h e a biblioteca padrão de funções em C, stdlib.h.
@@ -42,9 +50,5 @@ O `nome_do_executável` seria o arquivo executável gerado.
 No `lab02.c` você substituiria esse nome para o nome do seu arquivo. 
 Para executá-lo, basta digitar o seguinte comando: `./lab02.out`. Caso o arquivo gerado possua um nome diferente, basta substituir o arquivo `lab.out` pelo nome do arquivo gerado no comando anterior.
 
-<h2>Índice</h2>
-
-<ul>
-<li><img  >.</li>
 
 </ul>
