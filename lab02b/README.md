@@ -2,8 +2,7 @@
 
 <h3>Laboratório realizado para e entrega do dia 20/03</h3>
 
-<ins>Conteúdo:</ins> Enviamos três códigos na linguagem C para o Git utilizando a AWS para responder as perguntas propostas. <br>
-O código foi compilado e executado no ambiente da WSL pelo Prompt de Comando gerenciado pelo grupo.
+<ins>Conteúdo:</ins> Enviamos três códigos na linguagem C para o Git utilizando a AWS para responder as perguntas propostas. O código foi compilado e executado no ambiente da WSL pelo Prompt de Comando gerenciado pelo grupo.
 
 <ins>Integrantes:</ins>
 - Giovana Ribeiro de Francisco
