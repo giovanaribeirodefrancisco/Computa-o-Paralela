@@ -32,7 +32,7 @@ Construa uma solução paralela e responda às seguintes questões:
   
   Foi definido um valor N, como 100, para a declaração de três arrays globais:
     
-  - matriz[N][N], uma matriz 100x100, cujo valores serão aplicados aleatoriamente, utilizando a função <code>preencher</code>.
+  - matriz[N][N], uma matriz 10000x100, cujo valores serão aplicados aleatoriamente, utilizando a função <code>preencher</code>.
   - vetor[N], um vetor de tamanho 100 preenchido aleatoriamente pela função <code>preencher</code>
   - resultado[N], um vetor na qual armazena os resultados da multiplicação adquiridos.  
   
