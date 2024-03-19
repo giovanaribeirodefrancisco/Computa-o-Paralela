@@ -6,7 +6,7 @@
 
 int matriz[N][100];
 int vetor[100];
-int resultado[100];
+int resultado[N];
 int contador_thread;
 
 void* mult(void* rank){
