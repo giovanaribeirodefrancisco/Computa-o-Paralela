@@ -65,4 +65,5 @@ Para executá-lo basta digitar o seguinte comando: <code>./nome_do_executavel</c
 
 <h2>Execução:</h2>
 
-![Captura de Tela (591)](https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/d1bb16a0-21df-46d0-907f-9402a2dbc524)
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Execu%C3%A7%C3%A3o%20Lab2b.png" alt = "Execução Tempo">
+
