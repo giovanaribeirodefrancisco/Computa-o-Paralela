@@ -25,6 +25,18 @@ Construa uma solução paralela e responda às seguintes questões:
 3. Como você acha que poderia melhorar o seu algoritmo para obter maior benefício com o paralelismo? Para provar seu ponto, refaça a solução com essa abordagem e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
 
 <h2>Códigos:</h2>
+<ul>
+<code>lab02.c</code>
+
+  Primeiro, incluímos todas as bibliotecas, colocamos a biblioteca pthread.h no nosso código pois ela tem as funcionalidades necessárias que precisávamos. Adicionamos também a biblioteca padrão em C de entrada e saída, stdio.h e a biblioteca padrão de funções em C, stdlib.h.
+  
+  Foi definido um valor N, como 100, para a declaração de três arrays globais:
+    - matriz[N][N], uma matriz 100x100, cujo valores serão aplicados aleatoriamente, utilizando a função <code>preencher</code>.
+    - vetor[N], um vetor de tamanho 100 preenchido aleatoriamente pela função <code>preencher</code>
+    - resultado[N], um vetor na qual armazena os resultados da multiplicação adquiridos.  
+  
+</ul>
+  
 
 <h2>Compilação:</h2>
 
