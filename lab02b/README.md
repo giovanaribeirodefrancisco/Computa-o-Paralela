@@ -24,6 +24,8 @@ Construa uma solução paralela e responda às seguintes questões:
 
 3. Como você acha que poderia melhorar o seu algoritmo para obter maior benefício com o paralelismo? Para provar seu ponto, refaça a solução com essa abordagem e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
 
+   Não foi possível chegar em uma conclusão para poder melhorar o código, pois não foi 
+
 <h2>Códigos:</h2>
 
 <code>lab02.c</code>
