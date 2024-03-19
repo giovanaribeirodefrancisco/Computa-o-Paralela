@@ -23,6 +23,8 @@ Construa uma solução paralela e responda às seguintes questões:
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Gr%C3%A1fico2b.png" alt = "Gráfico de multiplicação 100000 x 100">
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
+   
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Speedup-2b.png" alt = "Gráfico do Speedup">
 
 3. Como você acha que poderia melhorar o seu algoritmo para obter maior benefício com o paralelismo? Para provar seu ponto, refaça a solução com essa abordagem e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
 
