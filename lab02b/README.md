@@ -21,6 +21,9 @@ Construa uma solução paralela e responda às seguintes questões:
 1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução
    
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Gr%C3%A1fico2b.png" alt = "Gráfico de multiplicação 100000 x 100">
+<li>
+  
+</li>
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
    
@@ -41,15 +44,14 @@ Construa uma solução paralela e responda às seguintes questões:
   - matriz[N][N], uma matriz 100000x100, cujo valores serão aplicados aleatoriamente, utilizando a função <code>preencher</code>.
   - vetor[N], um vetor de tamanho 100 preenchido aleatoriamente pela função <code>preencher</code>
   - resultado[N], um vetor na qual armazena os resultados da multiplicação adquiridos.  
-  
-  
+
 
 <h2>Compilação:</h2>
-Para fazer a compilação, utilizamos o gcc em um terminal da WSL, <code>gcc -o nome_do_executavel lab2b.c -lpthread</code>. 
+Para fazer a compilação, utilizamos o gcc em um terminal da WSL, <code>gcc -o nome_do_executavel lab2b.c -lpthread</code>.
+<br>
 No qual, o <code>nome_do_executavel</code> significa o nome do arquivo que será executado. Já o <code>-lpthread</code> é um suporte de threads POSIX utilizado para conectar a biblioteca pthread durante a compilação. 
-Para executá-lo basta digitar o seguinte comando: <code>./nome_do_executavel</code>, caso não tenha utilizado nada digitar <code>./a.out</code>, pois é a saída padrão. 
+Para executá-lo basta digitar o seguinte comando: <code>./nome_do_executavel</code>, caso não tenha utilizado nada, digitar <code>./a.out</code>, pois é a saída padrão. 
 
-  
 <h2>Execução:</h2>
 
 ![Captura de Tela (591)](https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/d1bb16a0-21df-46d0-907f-9402a2dbc524)
