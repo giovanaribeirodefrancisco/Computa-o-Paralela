@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define N 10000
+#define N 100000
 
 int matriz[N][100];
 int vetor[100];
