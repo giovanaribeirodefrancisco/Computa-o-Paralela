@@ -2,7 +2,7 @@
 
 <h3>Laboratório realizado para e entrega do dia 20/03</h3>
 
-<ins>Conteúdo:</ins> Enviamos três códigos na linguagem C para o Git utilizando a AWS para responder as perguntas propostas. O código foi compilado e executado no ambiente da WSL pelo Prompt de Comando gerenciado pelo grupo.
+<ins>Conteúdo:</ins> Enviamos um código na linguagem C para o Git utilizando a AWS para responder as perguntas propostas. O código foi compilado e executado no ambiente da WSL pelo Prompt de Comando gerenciado pelo grupo.
 
 <ins>Integrantes:</ins>
 - Giovana Ribeiro de Francisco
@@ -12,19 +12,19 @@
 <h2>Índice:</h2>
 <ul>
   <li><code>lab02b.c</code>: Código proposto pelo exercício de forma paralela sem otimização;
-  <li><code>lab2bserial.c</code>: Código proposto pelo exercício de forma serial;
 </ul>
 
 <h2>Exercícios:</h2>
 Construa uma solução paralela e responda às seguintes questões:
 
-1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução
+1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução.
    
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Gr%C3%A1fico2b.png" alt = "Gráfico de multiplicação 100000 x 100">
 
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Execu%C3%A7%C3%A3o%20Lab2b.png" alt = "Execução Tempo">
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
+   O valor do speedup foi calculado pelo valor do tempo serial, obtido ao executar o código em apenas 1 núcleo, dividido pelo valor do tempo em paralelo, tempo obtido ao executar o código com 2 ou mais núcleos.
    
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Speedup-2b.png" alt = "Gráfico do Speedup">
 
@@ -63,6 +63,4 @@ Para fazer a compilação, utilizamos o gcc em um terminal da WSL, <code>gcc -o 
 No qual, o <code>nome_do_executavel</code> significa o nome do arquivo que será executado. Já o <code>-lpthread</code> é um suporte de threads POSIX utilizado para conectar a biblioteca pthread durante a compilação. 
 Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o seguinte comando: <code>time ./nome_do_executavel 1 (exemplo de nº de núcleo)</code>, caso não tenha utilizado -o, substituir o <code>nome_do_executavel</code> por <code>./a.out</code>, pois é a saída padrão. 
 
-Como mostrado na foto em execução abaixo: 
-
-<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Execu%C3%A7%C3%A3o%20Lab2b.png" alt = "Execução Tempo">
+Como mostrado na foto apresentada abaixo do gráfico no exercício 01.
