@@ -65,3 +65,6 @@ No qual, o <code>nome_do_executavel</code> significa o nome do arquivo que será
 Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o seguinte comando: <code>time ./nome_do_executavel 1 (exemplo de nº de núcleo)</code>, caso não tenha utilizado -o, substituir o <code>nome_do_executavel</code> por <code>./a.out</code>, pois é a saída padrão. 
 
 Como mostrado na foto apresentada abaixo do gráfico no exercício 01.
+
+<h2>Especificações</h2>
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/cat%20proc%20cpuinfo.png" alt = "Especificacoes">
