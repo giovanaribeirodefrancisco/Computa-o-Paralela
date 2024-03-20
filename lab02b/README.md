@@ -24,6 +24,7 @@ Construa uma solução paralela e responda às seguintes questões:
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Execu%C3%A7%C3%A3o%20Lab2b.png" alt = "Execução Tempo">
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
+   
    O valor do speedup foi calculado pelo valor do tempo serial, obtido ao executar o código em apenas 1 núcleo, dividido pelo valor do tempo em paralelo, tempo obtido ao executar o código com 2 ou mais núcleos.
    
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Speedup-2b.png" alt = "Gráfico do Speedup">
