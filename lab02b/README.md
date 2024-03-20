@@ -61,9 +61,8 @@ Construa uma solução paralela e responda às seguintes questões:
 Para fazer a compilação, utilizamos o gcc em um terminal da WSL, <code>gcc -o nome_do_executavel lab2b.c -lpthread</code>.
 <br>
 No qual, o <code>nome_do_executavel</code> significa o nome do arquivo que será executado. Já o <code>-lpthread</code> é um suporte de threads POSIX utilizado para conectar a biblioteca pthread durante a compilação. 
-Para executá-lo basta digitar o seguinte comando: <code>./nome_do_executavel</code>, caso não tenha utilizado nada, digitar <code>./a.out</code>, pois é a saída padrão. 
+Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o seguinte comando: <code>time ./nome_do_executavel 1 (exemplo de nº de núcleo)</code>, caso não tenha utilizado -o, substituir o <code>nome_do_executavel</code> por <code>./a.out</code>, pois é a saída padrão. 
 
-<h2>Execução:</h2>
+Como mostrado na foto em execução abaixo: 
 
 <img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Execu%C3%A7%C3%A3o%20Lab2b.png" alt = "Execução Tempo">
-
