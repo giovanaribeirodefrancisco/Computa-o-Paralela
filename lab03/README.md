@@ -22,3 +22,9 @@
 
 
 <h2>Execução:</h2>
+
+
+<h2>CPU INFO:</h2>
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/15f47fb8-22dd-4004-af91-81fef86a238e"
+> 
+
