@@ -22,7 +22,7 @@ Construa uma solução paralela e responda às seguintes questões:
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
 
-3. Como você acha que poderia melhorar o seu algoritmo para obter maior benefício com o paralelismo? Para provar seu ponto, refaça a solução com essa abordagem e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
+3. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
 
 <img src= "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/1739bc6f-ddb3-47a9-852c-c49af57abc93">
 
@@ -33,19 +33,19 @@ Para a resolução dos exercícios foram utilizados 2 códigos o <code>lab03.c</
 <code>lab03.c</code>
 Primeiramente, foram importadas as bibliotecas <code>omp.h</code> para facilitar a criação de programas paralelos em sistemas com múltiplos núcleos de processamento; outra biblioteca utilizada foi <code>math.h</code>, pois foi utilizado a função <code>sin</code> para calcular o seno. Foram adicionadas também a biblioteca padrão em C de entrada e saída, stdio.h e a biblioteca padrão de funções em C, stdlib.h.
 
-A função <code>Trap</code> calcula a contribuição local de cada thread para a estimativa da integral. Ela recebe como entrada os limites de integração a e b, o número de trapézios n e um ponteiro para a variável que armazenará o resultado global, ela distribui a tarefa de calcular a integral entre os threads disponíveis. Cada thread calcula uma parte da integral para uma faixa específica do intervalo de integração e depois atualiza o resultado global de forma segura.
+A função <code>Trap</code> calcula a contribuição local de cada thread para a estimativa da integral. Ela recebe como entrada os limites de integração a e b, o número de trapézios n e um ponteiro para a variável que armazenará o resultado global, ela distribui a tarefa de calcular a integral entre os threads disponíveis. Cada thread calcula uma parte da integral para uma faixa específica do intervalo de integração e depois atualiza o resultado global.
 
 Após a conclusão da função, foi criado a função <code>main</code>, na qual configura o ambiente de execução para a paralelização do cálculo da integral usando a biblioteca OpenMP. Primeiro, ela lê o número de threads a serem utilizadas a partir dos argumentos da linha de comando. Em seguida, chama a função Trap dentro de uma região paralela, onde cada thread realiza o cálculo de uma parte da integral. Após a execução da região paralela, o resultado global é impresso na tela.
 
+<code>critico.c</code>
+Esse código é uma versão do código anterior, <code>lab03.c</code>, mas com uma pequena alteração. Foi colocada uma diretiva crítica, <code># pragma omp critical</code> na função <code>Trap</code>, logo antes do acesso a variável global, <code>global_result</code>, que fez com que, ao invés de todas as threads a acessarem simultâneamente, permitiu que cada uma das threads conseguise acessar-lá uma de cada vez.
 
 <h2>Compilação:</h2>
 Para fazer a compilação, utilizamos o gcc em um terminal da WSL, <code>gcc -g - Wall -fopenmp -o nome_do_executavel nome_do_código -lm</code>.
 <br>
 No qual, o <code>nome_do_executavel</code> significa o nome do arquivo que será executado, <code>nome_do_código</code> signifa o nome do código, neste caso o <code>lab03.c</code> ou <code>critico.c</code>. O <code>-g</code> inclui informações de depuração no arquivo executável gerado. O <code>-Wall</code> ativa a maioria das mensagens de aviso do compilador. O <code>-fopenmp</code> habilita o suporte para OpenMP durante a compilação. E por fim <code>-lm</code> liga o compilador a biblioteca <code>math.h</code> no código de execução da função <code>sin</code>.
 
-Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o seguinte comando: <code>time ./nome_do_executavel a b n x</code>, onde:
-  - a e b: equivalem ao limite da integração;
-  - n: equivalente ao número de trapézios neste limite;
+Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o seguinte comando: <code>time ./nome_do_executavel x</code>, onde:
   - x: o número de núcleos utilizados.
 
 Caso não tenha utilizado -o, substituir o <code>nome_do_executavel</code> por <code>./a.out</code>, pois é a saída padrão. 
