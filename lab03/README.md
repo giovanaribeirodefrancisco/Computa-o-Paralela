@@ -10,10 +10,8 @@
 - Letícia Moraes Gutierrez de Oliveira
 
 <h2>Índice:</h2>
-<ul>
   <li><code>lab03.c</code>: Código proposto pelos exercícios 1 e 2;
-  <li><code>a.c<\code>: Código proposto pelo exercício com solução a diretiva crítica.</li>
-</ul>
+  <li><code>a.c</code>code>: Código proposto pelo exercício com solução a diretiva crítica.</li>
 
 <h2>Exercícios:</h2>
 Construa uma solução paralela e responda às seguintes questões:
