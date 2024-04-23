@@ -11,7 +11,7 @@
 
 <h2>Índice:</h2>
   <li><code>lab03.c</code>: Código proposto pelos exercícios 1 e 2;
-  <li><code>a.c</code>code>: Código proposto pelo exercício com solução a diretiva crítica.</li>
+  <li><code>critico.c</code>code>: Código proposto pelo exercício com solução a diretiva crítica.</li>
 
 <h2>Exercícios:</h2>
 Construa uma solução paralela e responda às seguintes questões:
@@ -24,9 +24,11 @@ Construa uma solução paralela e responda às seguintes questões:
 
 3. Como você acha que poderia melhorar o seu algoritmo para obter maior benefício com o paralelismo? Para provar seu ponto, refaça a solução com essa abordagem e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
 
+<img src= "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/1739bc6f-ddb3-47a9-852c-c49af57abc93">
+
 
 <h2>Código:</h2>
-Para a resolução dos exercícios foram utilizados 2 códigos o <code>lab03.c</code> e o <code>a.c</code>.
+Para a resolução dos exercícios foram utilizados 2 códigos o <code>lab03.c</code> e o <code>critico.c</code>.
 
 <code>lab03.c</code>
 Primeiramente, foram importadas as bibliotecas <code>omp.h</code> para facilitar a criação de programas paralelos em sistemas com múltiplos núcleos de processamento; outra biblioteca utilizada foi <code>math.h</code>, pois foi utilizado a função <code>sin</code> para calcular o seno. Foram adicionadas também a biblioteca padrão em C de entrada e saída, stdio.h e a biblioteca padrão de funções em C, stdlib.h.
@@ -39,7 +41,7 @@ Após a conclusão da função, foi criado a função <code>main</code>, na qual
 <h2>Compilação:</h2>
 Para fazer a compilação, utilizamos o gcc em um terminal da WSL, <code>gcc -g - Wall -fopenmp -o nome_do_executavel nome_do_código -lm</code>.
 <br>
-No qual, o <code>nome_do_executavel</code> significa o nome do arquivo que será executado, <code>nome_do_código</code> signifa o nome do código, neste caso o <code>lab03.c</code> ou <code>a.c</code>. O <code>-g</code> inclui informações de depuração no arquivo executável gerado. O <code>-Wall</code> ativa a maioria das mensagens de aviso do compilador. O <code>-fopenmp</code> habilita o suporte para OpenMP durante a compilação. E por fim <code>-lm</code> liga o compilador a biblioteca <code>math.h</code> no código de execução da função <code>sin</code>.
+No qual, o <code>nome_do_executavel</code> significa o nome do arquivo que será executado, <code>nome_do_código</code> signifa o nome do código, neste caso o <code>lab03.c</code> ou <code>critico.c</code>. O <code>-g</code> inclui informações de depuração no arquivo executável gerado. O <code>-Wall</code> ativa a maioria das mensagens de aviso do compilador. O <code>-fopenmp</code> habilita o suporte para OpenMP durante a compilação. E por fim <code>-lm</code> liga o compilador a biblioteca <code>math.h</code> no código de execução da função <code>sin</code>.
 
 Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o seguinte comando: <code>time ./nome_do_executavel a b n x</code>, onde:
   - a e b: equivalem ao limite da integração;
