@@ -18,7 +18,7 @@ Construa uma solução paralela e responda às seguintes questões:
 
 1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução
 
-<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/e9f630cc-ec61-45ab-a543-6fe1fb8981a3">
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/8c1821ce-3c94-48e4-aa4c-36d63ac975ff">
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
 
