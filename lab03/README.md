@@ -47,6 +47,7 @@ Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o 
   - a e b: equivalem ao limite da integração;
   - n: equivalente ao número de trapézios neste limite;
   - x: o número de núcleos utilizados.
+
 Caso não tenha utilizado -o, substituir o <code>nome_do_executavel</code> por <code>./a.out</code>, pois é a saída padrão. 
 
 
