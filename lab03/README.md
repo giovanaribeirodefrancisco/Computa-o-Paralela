@@ -11,20 +11,40 @@
 
 <h2>Índice:</h2>
   <li><code>lab03.c</code>: Código proposto pelos exercícios 1 e 2;
-  <li><code>critico.c</code>code>: Código proposto pelo exercício com solução a diretiva crítica.</li>
+  <li><code>critico.c</code>: Código proposto pelo exercício com solução a diretiva crítica.</li>
 
 <h2>Exercícios:</h2>
 Construa uma solução paralela e responda às seguintes questões:
 
 1. Qual o tempo de execução serial e paralelo para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico contendo todos os tempos de execução
 
-<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/8c1821ce-3c94-48e4-aa4c-36d63ac975ff">
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/8c1821ce-3c94-48e4-aa4c-36d63ac975ff" alt = "Tempo de Execução">
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Segundos%20versus%20N%C3%BAcleos.png" alt = "Gráfico de Tempo de Execução">
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
+  
+  - Para 1 processador: 1
+  - Para 2 processadores: 1.5235
+  - Para 4 processadores: 2.6470
+  - Para 6 processadores: 3.1441
+  - Para 8 processadores: 3.6978
 
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Speedup%20versus%20N%C3%BAcleos.png" alt = "Gráfico SpeedUp">
+   
 3. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
+   
+   Não há uma diferença perceptível entre os códigos, o que há a diretiva critical e a que não há, no entanto, há uma leve demora quando a região critica é utilizada, por haver uma certa perda de speedup por parte dela. Isto pode ser causado pelo fato de uma thread precisar esperar para acessar a variável global, por haver outra a acessando.
+   
+<img src= "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/1739bc6f-ddb3-47a9-852c-c49af57abc93" alt = "Tempo de Execução com a Região Crítica">
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Segundos%20versus%20N%C3%BAcleos%20-%20Critico.png" alt = "Gráfico do Tempo de Execução com a Região Crítica">
 
-<img src= "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/1739bc6f-ddb3-47a9-852c-c49af57abc93">
+  Valores de SpeedUp na solução diretiva critical: 
+  - Para 1 processador: 1
+  - Para 2 processadores: 1.4861
+  - Para 4 processadores: 2.5821
+  - Para 6 processadores: 3.0670
+  - Para 8 processadores: 3.6071
+<img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Speedup%20versus%20N%C3%BAcleos%20-%20Critico.png" alt = "Gráfico do Speedup com a Região Critica">
 
 
 <h2>Código:</h2>
@@ -36,6 +56,11 @@ Primeiramente, foram importadas as bibliotecas <code>omp.h</code> para facilitar
 A função <code>Trap</code> calcula a contribuição local de cada thread para a estimativa da integral. Ela recebe como entrada os limites de integração a e b, o número de trapézios n e um ponteiro para a variável que armazenará o resultado global, ela distribui a tarefa de calcular a integral entre os threads disponíveis. Cada thread calcula uma parte da integral para uma faixa específica do intervalo de integração e depois atualiza o resultado global.
 
 Após a conclusão da função, foi criado a função <code>main</code>, na qual configura o ambiente de execução para a paralelização do cálculo da integral usando a biblioteca OpenMP. Primeiro, ela lê o número de threads a serem utilizadas a partir dos argumentos da linha de comando. Em seguida, chama a função Trap dentro de uma região paralela, onde cada thread realiza o cálculo de uma parte da integral. Após a execução da região paralela, o resultado global é impresso na tela.
+
+Para a realização do exercícios os limites da integração foram establecidos, sendo eles:
+  - a, o valor inicial do limite: 0;
+  - b, o valor final do limite: 10;
+  - n, o número de trapézios dentro do limite: 1239023616.
 
 <code>critico.c</code>
 Esse código é uma versão do código anterior, <code>lab03.c</code>, mas com uma pequena alteração. Foi colocada uma diretiva crítica, <code># pragma omp critical</code> na função <code>Trap</code>, logo antes do acesso a variável global, <code>global_result</code>, que fez com que, ao invés de todas as threads a acessarem simultâneamente, permitiu que cada uma das threads conseguise acessar-lá uma de cada vez.
