@@ -10,3 +10,8 @@
 - Letícia Moraes Gutierrez de Oliveira
 
 <h2>Índice</h2>
+
+
+<h2>CPU</h2>
+<li><img src = "https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/blob/main/src/Captura%20de%20tela%20de%202024-05-22%2005-40-02.png" alt = Informacao Cpu ></li>
+
