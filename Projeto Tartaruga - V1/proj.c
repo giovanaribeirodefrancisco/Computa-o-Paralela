@@ -59,13 +59,13 @@ double calcular_e_paralelo(int n_termos, int Threads) {
 
 	
 	mpfr_clear(global);
-	mpfr_clear(resultdivisao);
+	//mpfr_clear(resultdivisao);
 	for (int i = 0; i < n_termos; i++) {
 		mpfr_clear(vet[i]);
 	}
 	free(vet);
 
-	return resultado;
+	return 0;
 }
 
 
@@ -80,7 +80,6 @@ int main(int argc, char* argv[]) {
 	int n_termos = 1000000;
 	calcular_e_paralelo(n_termos,nThreads);
 
-	printf("Valor de e (paralelo): %.100f\n", e_paralelo);
 
 	return 0;
 }
