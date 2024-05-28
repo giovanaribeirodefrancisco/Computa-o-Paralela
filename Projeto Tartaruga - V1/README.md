@@ -10,8 +10,8 @@
 - Letícia Moraes Gutierrez de Oliveira
 
 <h2>Índice</h2>
-<li><code>proj.c</code>: Código Utilizado para o Projeto</li>,
-<li><code>Outras</code>: Códigos testes</li>.
+<li><code>proj.c</code>: Código Utilizado para o Projeto,</li>
+<li><code>Outras</code>: Códigos testes.</li>
 
 <h2>Exercícios</h2>
 Considere o problema da tartaruga envolvido no projeto final da disciplina. Desenvolva uma primeira versão serial e paralela levando em consideração os seguintes requisitos:
