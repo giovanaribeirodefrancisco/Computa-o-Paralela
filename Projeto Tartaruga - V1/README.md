@@ -81,7 +81,7 @@ A função <code>calcular_e_paralelo</code> aloca a memória para o vetor de fat
 A função <code>main</code> verifica se o número correto de argumenttos da linha de comando foi passado (o número de threads). Ela chama a função <code>calcular_e_paralelo</code> com o número de termos na série de Taylor e o número de threads especificado. 
 
 <h2>Compilação</h2>
-Para fazer a compilação, utilizamos o gcc em um terminal Linux, gcc -o nome_do_código nome_do_código.c -lmpfr -lgmp -fopenmp.
+Para fazer a compilação, utilizamos o gcc em um terminal Linux, <code>gcc -o nome_do_código nome_do_código.c -lmpfr -lgmp -fopenmp</code>
 No qual, o <code>gcc</code> é usado para compilar programas escritos em linguagem C. O <code>-o</code> especifica o nome do arquivo de saída do programa executável gerado após a compilação. O <code>nome_do_código</code> é o nome do arquivo de saída. O <code>nome_do_código.c</code> é o nome do arquivo fonte C que será compilado, neste caso o <code>proj.c</code>. O <code>-lmpfr</code> é opção do linker do compilador que especifica a biblioteca MPFR que será vinculada ao programa. O <code>-lgmp</code> é uma opção do linker que especifica a biblioteca GMP que será vinculada ao programa. O <code>-fopenmp</code> habilita o suporte para OpenMP durante a compilação. 
 Para executá-lo utilizando a quantidade de núcleos desejados, basta digitar o seguinte comando: time ./nome_do_executavel x, onde:
 
