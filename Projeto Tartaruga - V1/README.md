@@ -21,7 +21,17 @@ Considere o problema da tartaruga envolvido no projeto final da disciplina. Dese
 
 2. Qual o speedup para 1, 2, 4, 6 e 8 processadores? Desenhe um gráfico mostrando os diferentes valores de speedup.
 
-3. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
+   Para 1 Processador: 1m
+
+   Para 2 Processadores: 2m 2288
+
+   Para 4 Processadores: 5m 9587
+   
+   Para 6 Processadores: 8m 4694
+   
+   Para 8 Processadores: 11m 0319
+
+4. Introduza na sua solução a diretiva critical. O que muda? Para provar seu ponto, refaça a solução com essa abordagem, calcule os novos valores e construa um novo gráfico de speedup para 1, 2, 4, 6 e 8 processadores.
 
    Não precisa, pois o código utilizado já é uma solução crítica.
 
