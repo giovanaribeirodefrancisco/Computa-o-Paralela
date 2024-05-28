@@ -32,3 +32,28 @@ Considere o problema da tartaruga envolvido no projeto final da disciplina. Dese
 <h2>Referências</h2>
 <li>Intalação do MPFR: https://www.mpfr.org/mpfr-current/mpfr.html</li>
 
+1
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/b4d7804d-e6ba-4730-aaf6-3de7080fe431">
+
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/e8beb2aa-8f5e-49e1-9b97-eeac2e9f7df4">
+
+
+2
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/90b80364-3dc1-40b4-84a5-985f0528ed18">
+
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/25a09097-d4e4-4465-bb68-c28a4772db6c">
+
+4
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/baa01803-66a7-4f03-a918-a42113c7c624">
+
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/bb589935-8d82-4e6b-9ca5-6a7d2965b9d5">
+
+6
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/8b4ac87e-24a8-4653-8aa4-33cda08cfd7c">
+
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/4f7d8890-7620-48fd-82d3-d075fe64bfd7">
+
+8
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/58805179-3b10-49e7-9a68-08045db41c9a">
+
+<img src="https://github.com/giovanaribeirodefrancisco/Computa-o-Paralela/assets/161640729/d86bc254-884a-4ee3-bcb7-3aa118b9adf0">
